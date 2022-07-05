@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background: rgb(20,30,59);
+    background: linear-gradient(90deg, rgba(20,30,59,1) 0%, rgba(14,24,41,1) 35%, rgba(11,23,34,1) 100%);
+    padding: 0;
+    margin: 0;
+
+}
+.menu2{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background:  url(./fondo.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 230, 230);
+    height: 100%;
+    border-right: 0.2rem solid rgb(4, 5, 32);
+    overflow: hidden;
+    z-index: 1;
+}
+.menu{
+    animation: transform 4000ms ease-in-out;
+    position: fixed;
+    width: 16%;
+    text-align: center;
+    display: block;
+    background:  url(./fondo.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px 5px;
+    float: left;
+    color: rgb(255, 230, 230);
+    height: 50rem;
+    border-right: 0.2rem solid rgb(4, 5, 32);
+}
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+.barra-nav a{
+    display: block;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border-radius: 15px 50px;
+    background: rgba(92, 92, 167, 0.383);
+    color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra-nav a:hover{
+background: rgb(4, 37, 66);
+color: rgb(255, 255, 255);
+transition: width 2s, height 4s;
+
+}
+
+.links a{
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top:0.7rem ;
+    text-transform: capitalize;
+    width: 6rem;
+    height: 4rem;
+    animation: transform 0.4s;
+}
+.links{
+    display: block;
+    flex-direction: column;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    animation: transform 0.4s;
+}
+
+.alinear{
+    width: 100%;
+    display: block;
+    padding: 10rem 20rem 20rem 20rem;
+    height: 100%;
+}
+
+.menu-trigger{
+    position: fixed;
+    top: 0;
+    height: 40px;
+    width: 45px;
+    background: none;
+    border: none;
+    left: 0;
+    animation: transform 4000ms ease-in-out;
+    z-index: 2;
+}
+.menu-trigger svg{
+    height: 50px;
+    width: 50px;
+    color: white;
+    border: none;
+    animation: transform 4000ms ease-in-out;
+    z-index: 2;
+}
+
+.menu-trigger svg:hover{
+    height: 50px;
+    width: 50px;
+    color: gray;
+}
+
+
+
+.ocultar {
+    animation: transform 9000ms ease-in-out;
+    display: none;
+}
