@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.menu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: 1200ms ease-in-out;
+}
+.menu svg{
+    height: 2rem; 
+    width: 2rem;
+    transition: 300ms;
+}
+.menu svg:hover{
+transition: 300ms;
+color: rgb(6, 0, 97);
+}
+
+.contenedor{
+    border: solid 0.4rem rgb(43, 14, 90);
+    border-radius: 0.5rem 3rem 0.5rem 3rem;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding: 1rem;
+    row-gap: 2rem;
+    background-color: rgb(252, 252, 252);
+}    
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: solid 0.1rem rgba(62, 6, 114, 0.979);
+    border-radius: 2rem;
+    background-color: rgba(62, 2, 110, 0.459);
+    border-width: 0.14rem;
+    transition: 300ms ease-in-out;    
+        
+    }
+
+    .caja:hover{
+        border: solid 0.1rem rgba(67, 1, 80, 0.979);
+        border-radius: 0.5rem;
+        background-color: rgba(42, 1, 75, 0.822);
+        border-width: 0.14rem;
+        font-size: x-large;
+        transition: 300ms ease-in-out;    
+        }
+.caja span{
+    font-size: larger;
+    color: white;
+}
+
+.bienvenida{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 100;
+    transition: 300ms ease-in-out;
+    animation: cambiar 2s;
+}
+@keyframes cambiar {
+    from {
+        height: 100%;
+        opacity: 0;
+    }
+    to {
+        height: 14%;
+        opacity: 1;
+    }
+}
+.bienvenida-boton{
+    position: absolute;
+    animation: aparece 1.5s;
+}
+@keyframes aparece {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.aparecer {
+    visibility: hidden;
+    opacity: 0;
+    line-height: 0;
+    transition: 300ms ease-in-out ;
+}
+
+#calmenu,#geomenu,#fismenu,#algmenu{
+    padding-top: 10rem;
+    display: block;
+    opacity: 1;
+}
+
+#dist-dos-puntos{
+    text-align: center;
+    height: 30rem;
+}
