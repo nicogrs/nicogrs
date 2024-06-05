@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Nicolas</h1>
-<h3 align="center">I am a systems engineering student</h3>
+<h3 align="center">I'm a systems engineering student</h3>
+<h3 align="center">Welcome to my profile!</h3>
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
